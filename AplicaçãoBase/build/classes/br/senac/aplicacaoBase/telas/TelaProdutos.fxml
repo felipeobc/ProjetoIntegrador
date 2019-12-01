@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="400.0" minWidth="600.0" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.senac.aplicacaoBase.telas.TelaProdutosController">
+   <children>
+      <TextField fx:id="txtCodigo" layoutX="27.0" layoutY="81.0" promptText="Código" AnchorPane.leftAnchor="27.0" />
+      <ComboBox fx:id="comboEspecie" layoutX="27.0" layoutY="130.0" prefWidth="150.0" promptText="Espécie" AnchorPane.leftAnchor="27.0" />
+      <TextField fx:id="txtEstoque" layoutX="28.0" layoutY="227.0" promptText="Qtde. Estoque" AnchorPane.leftAnchor="28.0" />
+      <TableView fx:id="tabelaProdutos" layoutX="199.0" layoutY="58.0" prefHeight="287.0" prefWidth="375.0" AnchorPane.bottomAnchor="55.0" AnchorPane.rightAnchor="26.0" AnchorPane.topAnchor="58.0">
+         <columns>
+            <TableColumn fx:id="colunaCodigo" prefWidth="135.3333282470703" text="Código" />
+            <TableColumn fx:id="colunaEspecie" prefWidth="148.0" text="Espécie" />
+            <TableColumn fx:id="colunaEstoque" prefWidth="91.99996948242188" text="Qtde" />
+         </columns>
+      </TableView>
+      <Button layoutX="39.0" layoutY="296.0" mnemonicParsing="false" onAction="#acaoLimpar" text="Limpar" AnchorPane.bottomAnchor="79.0" AnchorPane.leftAnchor="39.0" />
+      <Button fx:id="btnSalvar" layoutX="127.0" layoutY="296.0" mnemonicParsing="false" onAction="#acaoSalvar" text="Inserir" AnchorPane.bottomAnchor="79.0" AnchorPane.rightAnchor="424.0" />
+      <Button layoutX="518.0" layoutY="356.0" mnemonicParsing="false" onAction="#acaoEditar" text="Editar" AnchorPane.bottomAnchor="19.0" AnchorPane.rightAnchor="35.0" />
+      <Button layoutX="443.0" layoutY="356.0" mnemonicParsing="false" onAction="#acaoExcluir" text="Excluir" AnchorPane.bottomAnchor="19.0" AnchorPane.leftAnchor="443.0" />
+      <TextField fx:id="txtPesquisa" layoutX="221.0" layoutY="19.0" prefHeight="25.0" prefWidth="237.0" promptText="Espécie" AnchorPane.rightAnchor="142.0" AnchorPane.topAnchor="19.0" />
+      <Button layoutX="484.0" layoutY="19.0" mnemonicParsing="false" onAction="#acaoPesquisar" text="Pesquisar" AnchorPane.rightAnchor="49.0" AnchorPane.topAnchor="19.0" />
+      <TextField fx:id="txtValor" layoutX="28.0" layoutY="178.0" promptText="Valor" AnchorPane.leftAnchor="28.0" />
+   </children>
+</AnchorPane>
